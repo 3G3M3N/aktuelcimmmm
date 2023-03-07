@@ -1,0 +1,399 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Aktüelcim</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Aktüel" name="keywords">
+        <meta content="Aktüel" name="description">
+        <link rel="icon" href="{% static 'img/vişne.png' %}" type="image">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet"> 
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="{% static 'lib/slick/slick.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/slick/slick-theme.css' %}" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    </head>
+    <body>  
+        <div class="brand">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="b-logo">
+                            <a href="/">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4">
+                        <div class="b-ads">
+                            <a href="/">
+                                <img src="{% static 'img/vişne.png' %}", width="500", height="300">
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+        <!-- Brand End -->
+
+          <!-- Nav Bar Start -->
+          <div class="nav-bar">
+            <div class="container">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                           <a href="/" class="nav-item nav-link active">Ana Sayfa</a>
+                            <div class="nav-item dropdown">
+                              <a href="/bim" class="nav-link dro">BİM</a>
+                            </div>
+                            <a href="/a101" class="nav-item nav-link">A101</a>
+                            <a href="/sok" class="nav-item nav-link ">ŞOK</a>
+                            <a href="/migros" class="nav-item nav-link">MİGROS</a>
+                           <a href="/iletisim" class="nav-item nav-link">İletişim</a>
+                        </div>
+                        <div class="social ml-auto">
+                            <a href="https://www.instagram.com/aktuel.cim/" target ="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/aktuel.cim/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/aktuel.cim/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/aktuel.cim/"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+        <!-- Top News Start-->
+        <div class="top-news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 tn-left">
+                        <div class="row tn-slider">
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img src="{% static 'img/a101.png' %}" />
+                                    <div class="tn-title">
+                                        <a href="/a101">A101 Tüm Aktüeller</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img src="{% static 'img/unnamed.jpg' %}" />
+                                    <div class="tn-title">
+                                        <a  href="/bim">BİM Tüm Aktüeller</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 tn-right">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img src="{% static 'img/a101.png' %}" />
+                                    <div class="tn-title">
+                                        <a href="/a101">A101 Tüm Aktüeller</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img src="{% static 'img/unnamed.jpg' %}" />
+                                    <div class="tn-title">
+                                        <a href="/bim">BİM Tüm Aktüeller</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img src="{% static 'img/sok.png' %}" />
+                                    <div class="tn-title">
+                                        <a href="/sok">Şok Tüm Aktüeller</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img src="{% static 'img/migros.jpg' %}" />
+                                    <div class="tn-title">
+                                        <a href="/migros">Migros Tüm Aktüeller</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top News End-->
+
+        <!-- Category News Start-->
+        <div class="cat-news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>BİM Aktüel</h2>
+                        <div class="row cn-slider">
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="{% static 'img/unnamed.jpg' %}" />
+                                    <div class="cn-title">
+                                        <a href="bim_7subat.html">BİM 7 Şubat Salı</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="{% static 'img/unnamed.jpg' %}" />
+                                    <div class="cn-title">
+                                        <a href="bim_10subat.html">BİM 10 Şubat Cuma</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="{% static 'img/unnamed.jpg' %}" />
+                                    <div class="cn-title">
+                                        <a href="bim_14subat.html">BİM 14 Şubat Salı</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>A101 Aktüel</h2>
+                        <div class="row cn-slider">
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="{% static 'img/a101.png' %}" />
+                                    <div class="cn-title">
+                                        <a href="a101_4subat.html">A101 4 Şubat Cumartesi</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="{% static 'img/a101.png' %}" />
+                                    <div class="cn-title">
+                                        <a href="a101_9subat.html">A101 9 Şubat Perşembe</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="{% static 'img/a101.png' %}" />
+                                    <div class="cn-title">
+                                        <a href="a101_11subat.html">A101 11 Şubat Cumartesi </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Category News End-->
+
+        <!-- Category News Start-->
+        <div class="cat-news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Şok Aktüel</h2>
+                        <div class="row cn-slider">
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="{% static 'img/sok.png' %}" />
+                                    <div class="cn-title">
+                                        <a href="sok_4subat.html">ŞOK 4 Şubat Cumartesi</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="{% static 'img/sok.png' %}" />
+                                    <div class="cn-title">
+                                        <a href="sok_8subat.html">ŞOK 8 Şubat Çarşamba</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="{% static 'img/sok.png' %}" />
+                                    <div class="cn-title">
+                                        <a href="#">Eklenecek</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Migros Aktüel</h2>
+                        <div class="row cn-slider">
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="{% static 'img/migros.jpg' %}" />
+                                    <div class="cn-title">
+                                        <a href="migros_19ocak.html">Migroskop 19 Ocak - 1 Şubat </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="{% static 'img/migros.jpg' %}" />
+                                    <div class="cn-title">
+                                        <a href="migros_2subat.html">Migroskop 2-15 Şubat </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="{% static 'img/migros.jpg' %}" />
+                                    <div class="cn-title">
+                                        <a href="#">Eklenecek </a>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+
+        <!-- Main News Start-->
+        <div class="main-news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="mn-img">
+                                    <img src="{% static 'img/unnamed.jpg' %}" />
+                                    <div class="mn-title">
+                                        <a href="/bim-21subat">BİM 21 Şubat Salı</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mn-img">
+                                    <img src="{% static 'img/a101.png' %}" />
+                                    <div class="mn-title">
+                                        <a href="/a101-18subat">A101 18 Şubat Cumartesi</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mn-img">
+                                    <img src="{% static 'img/sok.png' %}" />
+                                    <div class="mn-title">
+                                        <a href="/sok-18subat">ŞOK 18 Şubat Cumartesi</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mn-img">
+                                    <img src="{% static 'img/migros.jpg' %}" />
+                                    <div class="mn-title">
+                                        <a href="/migros-16subat">Migroskop 16 Şubat - 1 Mart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mn-img">
+                                    <img src="{% static 'img/unnamed.jpg' %}" />
+                                    <div class="mn-title">
+                                        <a href="/bim-24subat">BİM 24 Şubat Cuma</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mn-img">
+                                    <img src="{% static 'img/a101.png' %}" />
+                                    <div class="mn-title">
+                                        <a href="/a101-23subat">A101 23 Şubat Perşembe</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mn-img">
+                                    <img src="{% static 'img/sok.png' %}" />
+                                    <div class="mn-title">
+                                        <a href="/sok-15subat">ŞOK 15 Şubat Çarşamba</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mn-img">
+                                    <img src="{% static 'img/unnamed.jpg' %}" />
+                                    <div class="mn-title">
+                                        <a href="/bim-14subat">BİM 14 Şubat Salı</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mn-img">
+                                    <img src="{% static 'img/a101.png' %}" />
+                                    <div class="mn-title">
+                                        <a href="/a101-17subat">A101 17 Şubat Cuma</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="mn-list">
+                            <h2>Daha Fazla Aktüel:</h2>
+                            <ul>
+                                <li><a href="/a101-16subat">A101 16 Şubat Perşembe </a></li>
+                                <li><a href="/a101-18subat">A101 18 Şubat Cumartesi</a></li>
+                                <li><a href="/a101-23subat">A101 23 Şubat Perşembe</a></li>
+                                <li><a href="/bim-17subat">BİM 17 Şubat Salı</a></li>
+                                <li><a href="/bim-21subat">BİM 21 Şubat Cumartesi</a></li>
+                                <li><a href="/bim-24subat">BİM 24 Şubat Salı</a></li>
+                                <li><a href="/sok-15subat">ŞOK 15 Şubat Çarşamba</a></li>
+                                <li><a href="/sok-18subat">ŞOK 18 Şubat Cumartesi</a></li>
+                                <li><a href="/migros-2subat">Migroskop 2-15 Şubat</a></li>
+                                <li><a href="/migros-16subat">Migroskop 16 Şubat - 1 Mart </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main News End-->
+        <!-- Footer Bottom Start -->
+
+        <!-- Footer Bottom End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+        <script src="{% static 'lib/slick/slick.min.js' %}"></script>
+
+        <!-- Template Javascript -->
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>

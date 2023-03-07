@@ -1,0 +1,30 @@
+{% extends "layout2.html" %}
+{% load static %}
+
+
+
+{% block active %}
+<a href="/" class="nav-item nav-link">Ana Sayfa</a>
+<div class="nav-item dropdown">
+  <a href="/bim" class="nav-link">BİM</a>
+</div>
+<a href="/a101" class="nav-item nav-link">A101</a>
+<a href="/sok" class="nav-item nav-link">ŞOK</a>
+<a href="/migros" class="nav-item nav-link">MİGROS</a>
+<a href="/iletisim" class="nav-item nav-link active">İletişim</a>
+{% endblock active %}
+
+{% block sayfabası %}
+  <br><br><br><br><br>
+<h1 style="font-size:calc(1.5rem + .75vw); text-align: center;">Mail: <br> aktüelcim01@gmail.com</h1>
+
+        <!-- Footer Bottom Start -->
+
+        <!-- Footer Bottom End -->
+{% endblock sayfabası %}
+
+
+{% block sayfasonu %}
+    
+{% endblock sayfasonu %}
+    

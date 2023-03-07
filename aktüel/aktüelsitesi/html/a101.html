@@ -1,0 +1,196 @@
+{% extends "layout.html" %}
+{% load static %}
+
+
+
+{% block active %}
+<a href="/" class="nav-item nav-link">Ana Sayfa</a>
+<div class="nav-item dropdown">
+  <a href="/bim" class="nav-link">BİM</a>
+</div>
+<a href="/a101" class="nav-item nav-link active">A101</a>
+<a href="/sok" class="nav-item nav-link ">ŞOK</a>
+<a href="/migros" class="nav-item nav-link">MİGROS</a>
+<a href="/iletisim" class="nav-item nav-link">İletişim</a>
+{% endblock active %}
+    
+
+
+{% block sayfabası %}
+
+        <!-- Breadcrumb Start -->
+        <div class="breadcrumb-wrap">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                    <li class="breadcrumb-item active">A101 Aktüel</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb End -->
+        
+        <!-- Single News Start-->
+        <div class="single-news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="sn-container">
+                            <div class="sn-img">
+                                <img src="{% static 'img/a101.png' %}" width="100" height="500"/>
+                            </div>
+
+                            
+                            {% block silik %}
+                            <div class="sn-content">
+                                <h1 class="sn-title">A101 Aktüel</h1>
+                                <p>
+                                    A101 son zamanlarda çok yükselen bir zincir marketdir.
+                                </p>
+                               
+                                <p>
+                                    <strong>2008 yılında kurulmuştur.
+                                    </strong>
+
+                                    </p>
+                                    <br><br>
+                                    <h1>Tüm A101 Aktüeller:</h1>
+
+                            {% endblock silik %}
+                                
+                            
+                                    
+                                    
+                                    
+                                        
+                                    
+                            {% block a101 %}      
+                                    <br>
+
+                                    <h2><a href="/a101-2subat">2 Şubat Perşembe</a></h2>
+
+                                    <br>
+                                    
+                                    <h2><a href="/a101-4subat">4 Şubat Cumartesi:</a></h2>
+
+                                    <br>
+                                    
+                                    <h2><a href="/a101-9subat">9 Şubat Perşembe:</a></h2>
+
+                                    <br>
+                                    
+                                    <h2><a href="/a101-11subat">11 Şubat Cumartesi:</a></h2>
+
+                                    <br>
+                                    
+                                    <h2><a href="/a101-16subat">16 Şubat Perşembe:</a></h2>
+
+                                    <br>
+                                    
+                                    <h2><a href="/a101-18subat">18 Şubat Cumartesi:</a></h2>
+
+                                    <br>
+                                    
+                                    <h2><a href="/a101-23subat">23 Şubat Perşembe:</a></h2>
+                                    {% endblock a101 %}
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="sn-related">
+
+                           
+                           
+                            
+                           
+  
+                            <h2>İlgili Aktüeller</h2>
+                            <div class="row sn-slider">
+                                <div class="col-md-4">
+                                    <div class="sn-img">
+                                        <img src="{% static 'img/a101.png' %}" />
+                                        <div class="sn-title">
+                                            <a href="/a101-11subat">11 Şubat Cumartesi</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="sn-img">
+                                        <img src="{% static 'img/a101.png' %}" />
+                                        <div class="sn-title">
+                                            <a href="/a101-16subat">16 Şubat Perşembe</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="sn-img">
+                                        <img src="{% static 'img/a101.png' %}" />
+                                        <div class="sn-title">
+                                            <a href="/a101-18subat">18  Şubat Cumartesi</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="sn-img">
+                                        <img src="{% static 'img/a101.png' %}" />
+                                        <div class="sn-title">
+                                            <a href="/a101-23subat">23 Şubat Perşembe</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                        
+                    <div class="col-lg-4">
+                        <div class="sidebar">
+                            <div class="sidebar-widget">
+                                <h2 class="sw-title">Daha Çok A101 Aktüel</h2>
+                                <div class="news-list">
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="{% static 'img/a101.png' %}" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="/a101-9subat">A101 9 Şubat Perşembe</a>
+                                        </div>
+                                    </div>
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="{% static 'img/a101.png' %}" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="/a101-11subat">A101 11 Şubat Cumartesi</a>
+                                        </div>
+                                    </div>
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="{% static 'img/a101.png' %}" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="/a101-16subat">A101 16 Şubat Perşembe</a>
+                                        </div>
+                                    </div>
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="{% static 'img/a101.png' %}" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="/a101-18subat">A101 18 Şubat Cumartesi</a>
+                                        </div>
+                                    </div>
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="{% static 'img/a101.png' %}" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="/a101-23subat">A101 23 Şubat Perşembe</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+{% endblock sayfabası %}
+    

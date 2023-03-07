@@ -1,0 +1,177 @@
+{% extends "layout.html" %}
+{% load static %}
+
+
+
+{% block active %}
+<a href="/" class="nav-item nav-link">Ana Sayfa</a>
+<div class="nav-item dropdown">
+  <a href="/bim" class="nav-link">BİM</a>
+</div>
+<a href="/a101" class="nav-item nav-link">A101</a>
+<a href="/sok" class="nav-item nav-link active">ŞOK</a>
+<a href="/migros" class="nav-item nav-link">MİGROS</a>
+<a href="/iletisim" class="nav-item nav-link">İletişim</a>
+{% endblock active %}
+    
+
+
+{% block sayfabası %}
+
+        <!-- Breadcrumb Start -->
+        <div class="breadcrumb-wrap">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                    <li class="breadcrumb-item active">ŞOK Aktüel</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb End -->
+        
+        <!-- Single News Start-->
+        <div class="single-news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="sn-container">
+                            <div class="sn-img">
+                                <img src="{% static 'img/sok.png' %}" width="100" height="500"/>
+                            </div>
+
+                            
+                            {% block siliksok %}
+                                
+                            
+                                
+                            <div class="sn-content">
+                                <h1 class="sn-title">ŞOK Aktüel</h1>
+                                <p>1995 yılında Migros tarafından kurulmuştur. 2011'de ise Yıldız Holding tarafından satın alınmıştır.</p>
+                                    
+                                    
+                                    <h1>Tüm ŞOK Aktüeller:</h1>
+
+                                    {% endblock siliksok %}
+                                
+
+                                    
+                                    {% block sok %}
+                                        
+                                    
+                                        
+                                    <br>
+
+                                    <h2><a href="/sok-4subat">4 Şubat Cumartesi:</a></h2>
+
+                                    <br>
+                                    
+                                    <h2><a href="/sok-8subat">8 Şubat Çarşamba:</a></h2>
+
+                                    <br>
+                                    
+                                    <h2><a href="/sok-11subat">11 Şubat Cumartesi:</a></h2>
+
+                                    
+                                    <br>
+                                    
+                                    <h2><a href="/sok-15subat">15 Şubat Çarşamba:</a></h2>
+
+                                    <br>
+                                    
+                                    <h2><a href="/sok-18subat">18 Şubat Cumartesi:</a></h2>
+
+                                    
+                                    {% endblock sok %}
+
+
+                            </div>
+                        </div>
+                        <div class="sn-related">
+                            <h2>İlgili Aktüeller</h2>
+                            <div class="row sn-slider">
+                                <div class="col-md-4">
+                                    <div class="sn-img">
+                                        <img src="{% static 'img/sok.png' %}" />
+                                        <div class="sn-title">
+                                            <a href="/sok-8subat">8 Şubat Çarşamba</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="sn-img">
+                                        <img src="{% static 'img/sok.png' %}" />
+                                        <div class="sn-title">
+                                            <a href="/sok-11subat">11 Şubat Cumartesi</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="sn-img">
+                                        <img src="{% static 'img/sok.png' %}" />
+                                        <div class="sn-title">
+                                            <a href="/sok-15subat">15 Şubat Çarşamba</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="sn-img">
+                                        <img src="{% static 'img/sok.png' %}" />
+                                        <div class="sn-title">
+                                            <a href="/sok-18subat">18 Şubat Cumartesi</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="sidebar">
+                            <div class="sidebar-widget">
+                                <h2 class="sw-title">Daha Çok ŞOK Aktüel</h2>
+                                <div class="news-list">
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="{% static 'img/sok.png' %}" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="/sok-4subat">4 Şubat Cumartesi</a>
+                                        </div>
+                                    </div>
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="{% static 'img/sok.png' %}" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="/sok-8subat">8 Şubat Çarşamba</a>
+                                        </div>
+                                    </div>
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="{% static 'img/sok.png' %}" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="/sok-11subat">11 Şubat Cumartesi</a>
+                                        </div>
+                                    </div>
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="{% static 'img/sok.png' %}" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="/sok-15subat">15 Şubat Çarşamba</a>
+                                        </div>
+                                    </div>
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="{% static 'img/sok.png' %}" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="/sok-18subat">18 Şubat Cumartesi</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+{% endblock sayfabası %}
+    
